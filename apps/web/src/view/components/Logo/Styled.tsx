@@ -1,13 +1,9 @@
 import { Button, color, getFontSize, padding } from 'react-aui';
 import styled from 'styled-components';
 
-// font to svg: https://danmarshall.github.io/google-font-to-svg-path/
-// Comfortaa font
-// import { ReactComponent as Svg } from './bllng.svg';
-
 const S = {
 	$: styled(Button)`
-		font-family: 'Comfortaa', cursive;
+		font-family: 'Montserrat', cursive;
 		gap: ${padding('small')};
 
 		@media screen and (max-width: 480px) {

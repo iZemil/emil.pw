@@ -3,6 +3,7 @@
 stages:
     - build
     - release
+    - deploy
 
 default:
     image: node:14.17.6
@@ -29,7 +30,6 @@ builder:
             - dist/
             - node_modules/
 
-
 create-release:
     stage: release
     only:
@@ -46,3 +46,19 @@ create-release:
         GITLAB_TOKEN: $GITLAB_TOKEN
     script:
         - npx semantic-release
+
+deploy-gitlab-pages:
+    only:
+        refs:
+            - main
+    stage: deploy
+    image: alpine:latest
+    variables:
+        GIT_STRATEGY: none
+    script:
+        - ls
+        - mv dist/apps/web public
+        - cp public/index.html public/404.html
+    artifacts:
+        paths:
+            - public
