@@ -1,0 +1,69 @@
+{
+	"npmScope": "web",
+	"affected": {
+		"defaultBase": "main"
+	},
+	"cli": {
+		"defaultCollection": "@nrwl/nest"
+	},
+	"implicitDependencies": {
+		"package.json": {
+			"dependencies": "*",
+			"devDependencies": "*"
+		},
+		".eslintrc.json": "*"
+	},
+	"tasksRunnerOptions": {
+		"default": {
+			"runner": "@nrwl/nx-cloud",
+			"options": {
+				"cacheableOperations": [
+					"build",
+					"lint",
+					"test",
+					"e2e"
+				],
+				"accessToken": "ZDkyYTA0OWEtMjZmOC00N2QxLTliYzYtNzhmODEzODA1YWIyfHJlYWQtd3JpdGU="
+			}
+		}
+	},
+	"targetDependencies": {
+		"build": [
+			{
+				"target": "build",
+				"projects": "dependencies"
+			}
+		]
+	},
+	"defaultProject": "web",
+	"generators": {
+		"@nrwl/react": {
+			"application": {
+				"style": "styled-components",
+				"linter": "eslint",
+				"babel": true
+			},
+			"component": {
+				"style": "styled-components"
+			},
+			"library": {
+				"style": "styled-components",
+				"linter": "eslint"
+			}
+		},
+		"@nrwl/next": {
+			"application": {
+				"style": "styled-components",
+				"linter": "eslint"
+			}
+		}
+	},
+	"targetDefaults": {
+		"test": {
+			"inputs": [
+				"default",
+				"^default"
+			]
+		}
+	}
+}
