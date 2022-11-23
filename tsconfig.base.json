@@ -18,6 +18,7 @@
 		"noImplicitAny": true,
 		"baseUrl": ".",
 		"paths": {
+			"@web/components": ["apps/web/src/view/components"],
 			"@web/routes": ["apps/web/src/view/pages/routes"],
 			"@web/store": ["apps/web/src/store"],
 			"@ui": ["libs/ui/src/index.ts"],

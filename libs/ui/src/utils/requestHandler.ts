@@ -5,7 +5,6 @@
 type TNestError = {
 	data: {
 		error: string;
-		// string[] for class-validator errors
 		message: string | string[];
 		statusCode: number;
 	};
