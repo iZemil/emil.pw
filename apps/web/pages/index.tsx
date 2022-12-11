@@ -1,11 +1,5 @@
 import * as React from 'react';
-import { AUIProvider, Button, GlobalStyles, IAUI } from 'react-aui';
-import styled from 'styled-components';
-
-const StyledPage = styled.div`
-	.page {
-	}
-`;
+import { AUIProvider, GlobalStyles, IAUI } from 'react-aui';
 
 const theme: IAUI = {
 	mode: 'dark',
@@ -63,28 +57,12 @@ const CV: ICV = {
 };
 
 export function Index() {
-	/*
-	 * Replace the elements below with your own.
-	 *
-	 * Note: The corresponding styles are in the ./index.styled-components file.
-	 */
 	return (
 		<AUIProvider themes={[theme]}>
 			<GlobalStyles />
 
-			<StyledPage>
-				<div className="wrapper">
-					<img src="emil.png" alt="emil.pw" />
-
-					<Button>Click me!</Button>
-					<div className="container">
-						<h1>https://nx.dev/packages/next</h1>
-						<h1>https://nx.dev/packages/next</h1>
-						<h1>https://nx.dev/packages/next</h1>
-						<h1>https://nx.dev/packages/next</h1>
-					</div>
-				</div>
-			</StyledPage>
+			{/* @docs: https://nx.dev/packages/next */}
+			<img src="emil.png" alt="emil.pw" width={200} />
 		</AUIProvider>
 	);
 }
