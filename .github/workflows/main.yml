@@ -27,4 +27,4 @@ jobs:
                   BRANCH: main
                   FOLDER: dist/apps/web/exported
                   CLEAN: true
-                  TARGET_FOLDER: public
+                  TARGET_FOLDER: docs
