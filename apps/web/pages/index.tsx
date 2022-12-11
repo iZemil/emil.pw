@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AUIProvider, GlobalStyles, IAUI } from 'react-aui';
+import { AUIProvider, GlobalStyles, IAUI, Title } from 'react-aui';
 
 const theme: IAUI = {
 	mode: 'dark',
@@ -63,6 +63,8 @@ export function Index() {
 
 			{/* @docs: https://nx.dev/packages/next */}
 			<img src="emil.png" alt="emil.pw" width={200} />
+
+			<Title>emil.pw</Title>
 		</AUIProvider>
 	);
 }
