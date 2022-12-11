@@ -7,7 +7,7 @@ module.exports = {
 	useTabs: true,
 	tabWidth: 4,
 	bracketSpacing: true,
-	importOrder: ['^(@shared)|(@web)|(@ui)', '^\\.\\./', '^\\./'],
+	importOrder: ['^(@shared)', '^\\.\\./', '^\\./'],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
 };

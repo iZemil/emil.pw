@@ -17,13 +17,7 @@
 		"strictPropertyInitialization": false,
 		"noImplicitAny": true,
 		"baseUrl": ".",
-		"paths": {
-			"@shared": ["libs/shared/src/index.ts"],
-			"@ui": ["libs/ui/src/index.ts"],
-			"@web/components": ["apps/web/src/view/components"],
-			"@web/routes": ["apps/web/src/view/pages/routes"],
-			"@web/store": ["apps/web/src/store"]
-		}
+		"paths": {}
 	},
 	"exclude": ["node_modules", "tmp"]
 }
