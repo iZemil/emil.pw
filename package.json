@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"homepage": "https://emil.pw",
 	"scripts": {
-		"build": "nx run web:export:production",
 		"dev": "nx run web:serve",
+		"build": "nx run web:export:production",
 		"lint": "nx run-many --target=lint --all",
 		"postinstall": "husky install"
 	},
