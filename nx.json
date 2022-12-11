@@ -17,12 +17,7 @@
 		"default": {
 			"runner": "@nrwl/nx-cloud",
 			"options": {
-				"cacheableOperations": [
-					"build",
-					"lint",
-					"test",
-					"e2e"
-				],
+				"cacheableOperations": ["build", "lint", "test", "e2e"],
 				"accessToken": "ZDkyYTA0OWEtMjZmOC00N2QxLTliYzYtNzhmODEzODA1YWIyfHJlYWQtd3JpdGU="
 			}
 		}
@@ -60,10 +55,7 @@
 	},
 	"targetDefaults": {
 		"test": {
-			"inputs": [
-				"default",
-				"^default"
-			]
+			"inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
 		}
 	}
 }

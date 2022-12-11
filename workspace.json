@@ -1,8 +1,8 @@
 {
 	"version": 2,
 	"projects": {
-		"web": "apps/web",
 		"shared": "libs/shared",
-		"ui": "libs/ui"
+		"ui": "libs/ui",
+		"web": "apps/web"
 	}
 }
