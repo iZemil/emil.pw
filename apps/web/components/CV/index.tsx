@@ -2,7 +2,6 @@ import { format, formatDistance } from 'date-fns';
 import Image from 'next/image';
 import * as React from 'react';
 import { Button, Divider, Text, Title } from 'react-aui';
-import Pdf from 'react-to-pdf';
 
 import * as S from './Styled';
 import { DATA } from './consts';
@@ -60,21 +59,15 @@ export function CV() {
 	const ref = React.useRef<HTMLDivElement>(null);
 	const [withAllStack, setAllStack] = React.useState(false);
 
+	const handleDownload = () => {
+		window.print();
+	};
+
 	return (
 		<S.Wrapper>
-			<Pdf targetRef={ref} filename={`${DATA.pdfFilename}`}>
-				{({ toPdf }) => (
-					<S.Download>
-						<Button
-							onClick={() => {
-								toPdf();
-							}}
-						>
-							Download CV
-						</Button>
-					</S.Download>
-				)}
-			</Pdf>
+			<S.Download>
+				<Button onClick={handleDownload}>Download CV</Button>
+			</S.Download>
 
 			<S.CV ref={ref}>
 				<S.Head>

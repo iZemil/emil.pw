@@ -64,6 +64,10 @@ export const Download = styled.div`
 	right: 20px;
 	bottom: 20px;
 	z-index: 9;
+
+	@media print {
+		display: none;
+	}
 `;
 
 export const List = styled.div`

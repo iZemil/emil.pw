@@ -38,7 +38,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>emil.pw</title>
+				<title>Emil Zaripov</title>
 			</Head>
 
 			<main className="app">
