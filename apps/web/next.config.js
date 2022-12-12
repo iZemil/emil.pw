@@ -11,6 +11,10 @@ const nextConfig = {
 		// See: https://github.com/gregberge/svgr
 		svgr: false,
 	},
+	compiler: {
+		// Enables the styled-components SWC transform
+		styledComponents: true,
+	},
 };
 
 module.exports = withTM(withNx(nextConfig));

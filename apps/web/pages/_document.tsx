@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from 'next/document';
+import * as React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class CustomDocument extends Document {
@@ -23,7 +24,11 @@ export default class CustomDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<Head>{this.props.styles}</Head>
+				<Head>
+					<link rel="shortcut icon" href="/favicon.png" />
+
+					{this.props.styles}
+				</Head>
 				<body>
 					<Main />
 					<NextScript />
