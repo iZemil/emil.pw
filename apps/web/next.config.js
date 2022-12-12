@@ -15,6 +15,9 @@ const nextConfig = {
 		// Enables the styled-components SWC transform
 		styledComponents: true,
 	},
+	images: {
+		unoptimized: true,
+	},
 };
 
 module.exports = withTM(withNx(nextConfig));
