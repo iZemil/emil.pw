@@ -9,7 +9,6 @@ export const DATA: ICV = {
 		Date.now(),
 		START_DATE
 	)}+ years of experience. I’m looking for a senior backend role remotely.`,
-	pdfFilename: 'zaripov-emil.pdf',
 	contacts: [
 		{ name: 'linkedin', value: 'https://www.linkedin.com/in/zemil' },
 		{ name: 'email', value: 'elzyggg@gmail.com' },
@@ -32,7 +31,8 @@ export const DATA: ICV = {
 			to: new Date('2022 Apr'),
 			from: new Date('2021 Sep'),
 			achievements: [
-				'developed a gateway between frontend and analytics sides of the geological application',
+				'developed graphql API to use geological analytics operations',
+				'reviewed the backend development team',
 				'led javascript technical interviews',
 			],
 			stack: [ETech.typescript, ETech.nodejs, ETech.nestjs, ETech.graphql, ETech.mongoose],
@@ -41,10 +41,10 @@ export const DATA: ICV = {
 		{
 			title: 'Tech Lead Developer',
 			company: 'Sparkme.club',
-			to: new Date('2021 Aug'),
-			from: new Date('2021 Apr'),
+			to: new Date('2021 Sep'),
+			from: new Date('2021 Jan'),
 			achievements: [
-				'developed a video game chat web application from Zero to MVP',
+				'developed a video game chat application from Zero to MVP',
 				'planned tech issues for the team',
 				'led product planning with CEO',
 			],
@@ -65,8 +65,10 @@ export const DATA: ICV = {
 			to: new Date('2021 Jan'),
 			from: new Date('2019 Oct'),
 			achievements: [
+				'helped to solve issues for minimizing operational costs for the drilling company',
+				'developed microservice gateway to work with Primavera system',
+				'developed npm packages for company usage',
 				'developed a gateway (frontend - python analytics)',
-				'solved backend issues about minimizing operational costs for the drilling company',
 			],
 			stack: [
 				ETech.typescript,
@@ -86,7 +88,7 @@ export const DATA: ICV = {
 			to: new Date('2019 Aug'),
 			from: new Date('2019 Mar'),
 			achievements: [
-				'developed Gambling platform from Zero to MVP',
+				'developed gambling platform from Zero to MVP',
 				'planned backend and blockchain issues for the team',
 				'integrated blockchain for web application',
 			],
@@ -99,6 +101,7 @@ export const DATA: ICV = {
 			from: new Date('2018 Jul'),
 			achievements: [
 				'developed frontend side of AI Recruitment web application',
+				'developed own usage content CMS',
 				'estimated tech tasks as part of a team',
 			],
 			stack: [ETech.reactjs, ETech.mobx, ETech.mobx_state_tree, ETech.antd],
@@ -106,17 +109,16 @@ export const DATA: ICV = {
 		{
 			title: 'Frontend Developer',
 			company: 'Freelance/Dextra/Unit6',
-			to: new Date('2018 Jul'),
+			to: new Date('2018 Jun'),
 			from: START_DATE,
 			achievements: [
 				'developed several Jira Plugins',
-				'worked with a designer to create landing pages',
+				'developed huge amount of web page markups with cross platform support',
 				'supported current web solutions',
-				'made markup for multiple websites with cross platform support',
 				'developed wordpress applications for my freelance clients',
 			],
 			stack: [ETech.reactjs, ETech.redux, ETech.wordpress, ETech.scss, ETech.pug, ETech.js_dom_api],
 		},
 	],
-	hobbies: ['🥋 brazilian jiu-jitsu', '🍳 cooking', '🦄 own projects coding'],
+	hobbies: ['🦄 developing my own projects', '🥋 brazilian jiu-jitsu', '🍳 cooking'],
 };

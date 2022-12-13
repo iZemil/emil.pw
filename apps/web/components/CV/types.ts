@@ -66,7 +66,6 @@ export interface IContact {
 }
 
 export interface ICV {
-	pdfFilename: string;
 	title: string;
 	description: string;
 	contacts: IContact[];

@@ -41,12 +41,13 @@ function CustomApp({ Component, pageProps }: AppProps) {
 				<title>Emil Zaripov</title>
 			</Head>
 
-			<main className="app">
-				<AUIProvider themes={[theme]}>
+			<AUIProvider themes={[theme]}>
+				<main className="app">
 					<GlobalStyles />
+
 					<Component {...pageProps} />
-				</AUIProvider>
-			</main>
+				</main>
+			</AUIProvider>
 		</>
 	);
 }

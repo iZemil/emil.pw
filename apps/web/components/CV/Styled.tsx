@@ -12,11 +12,16 @@ export const CV = styled.div`
 	width: 100%;
 	margin: auto;
 	padding: 20px;
+	padding-bottom: 40px;
 `;
 
 export const Head = styled.div`
 	display: flex;
 	gap: 20px;
+
+	@media screen and (max-width: 680px) {
+		flex-direction: column;
+	}
 `;
 
 export const HeadTitle = styled(Title).attrs({ h1: true, vertical: 'top', justifyContent: 'left' })`

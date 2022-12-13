@@ -25,7 +25,11 @@ export default class CustomDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					{/* <link rel="icon" type="image/x-icon" href="favicon.ico" /> */}
 					<link rel="shortcut icon" href="/favicon.png" />
+
+					<meta property="mobile-web-app-capable" content="yes" />
+					<meta property="og:locale" content="en_US" />
 
 					{this.props.styles}
 				</Head>

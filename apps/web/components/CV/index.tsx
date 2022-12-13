@@ -46,8 +46,8 @@ const Job = (props: IJob) => {
 			</S.List>
 
 			<S.JobStack>
-				{stack.map((it) => (
-					<span key={it}>{it}</span>
+				{stack.map((it, index) => (
+					<span key={`${it}-${index}`}>{it}</span>
 				))}
 			</S.JobStack>
 		</S.Job>
@@ -81,7 +81,7 @@ export function CV() {
 						<Section title="Stack">
 							<Text>
 								<Text color="grey" inline>
-									{withAllStack ? 'worked with' : 'main'}
+									{withAllStack ? 'Worked with' : 'Main'}
 									{': '}
 								</Text>
 								<Text inline>
