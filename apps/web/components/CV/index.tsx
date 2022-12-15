@@ -71,7 +71,7 @@ export function CV() {
 
 			<S.CV ref={ref}>
 				<S.Head>
-					<Image src="/emil.png" alt="Emil" width={IMAGE_SIZE} height={IMAGE_SIZE} />
+					<Image src="/emil.jpg" alt="Emil" width={IMAGE_SIZE} height={IMAGE_SIZE} />
 
 					<S.HeadMeta>
 						<S.HeadTitle bottom={10}>{DATA.title}</S.HeadTitle>

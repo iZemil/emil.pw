@@ -9,7 +9,7 @@ export function Index() {
 		<>
 			<Head>
 				<meta property="og:url" content="https://emil.pw" />
-				<meta property="og:image" content="https://emil.pw/emil.png" />
+				<meta property="og:image" content="https://emil.pw/emil.jpg" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content={DATA.title} />
 				<meta property="og:description" content={DATA.description} />
