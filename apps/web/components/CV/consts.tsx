@@ -8,7 +8,7 @@ export const DATA: ICV = {
 	description: `Senior Full Stack Developer with ${differenceInYears(
 		Date.now(),
 		START_DATE
-	)}+ years of experience. I’m looking for a senior backend role remotely.`,
+	)}+ years of experience. I’m looking for a senior role remotely.`,
 	contacts: [
 		{ name: 'linkedin', value: 'https://www.linkedin.com/in/zemil' },
 		{ name: 'email', value: 'elzyggg@gmail.com' },
