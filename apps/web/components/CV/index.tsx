@@ -7,14 +7,16 @@ import * as S from './Styled';
 import { DATA } from './consts';
 import { ETech, IJob } from './types';
 
-const Section = (props: { title: string; children: React.ReactNode }) => {
+const Section = (props: { title?: string; children: React.ReactNode }) => {
 	const { title, children } = props;
 
 	return (
 		<>
-			<Title h2 color="grey" bottom={5}>
-				{title}
-			</Title>
+			{title && (
+				<Title h2 color="grey" bottom={5}>
+					{title}
+				</Title>
+			)}
 
 			{children}
 		</>
@@ -65,7 +67,7 @@ export function CV() {
 
 	return (
 		<S.Wrapper>
-			<S.Download>
+			<S.Download className="no-print">
 				<Button onClick={handleDownload}>Download CV</Button>
 			</S.Download>
 
@@ -76,12 +78,14 @@ export function CV() {
 					<S.HeadMeta>
 						<S.HeadTitle bottom={10}>{DATA.title}</S.HeadTitle>
 
-						<Text>{DATA.description}</Text>
+						<Text>
+							<span dangerouslySetInnerHTML={{ __html: DATA.description }} />
+						</Text>
 
-						<Section title="Stack">
+						<Section>
 							<Text>
-								<Text color="grey" inline>
-									{withAllStack ? 'Worked with' : 'Main'}
+								<Text bold inline>
+									{withAllStack ? 'Worked with' : 'Core Stack'}
 									{': '}
 								</Text>
 								<Text inline>
@@ -89,11 +93,13 @@ export function CV() {
 									<Button
 										type="text"
 										size="small"
+										className="no-print"
 										onClick={() => {
 											setAllStack(!withAllStack);
 										}}
+										style={{ display: 'inline' }}
 									>
-										{withAllStack ? 'see main stack' : 'see all skills'}
+										{withAllStack ? 'see core stack' : 'see all skills'}
 									</Button>
 								</Text>
 							</Text>
@@ -102,9 +108,9 @@ export function CV() {
 				</S.Head>
 
 				<Divider dashed />
-				<Section title="Career">
+				<Section title="Experience">
 					<S.List>
-						{DATA.career.map((it, key) => (
+						{DATA.experience.map((it, key) => (
 							<Job key={key} {...it} />
 						))}
 					</S.List>

@@ -8,7 +8,7 @@ export const DATA: ICV = {
 	description: `Senior Full Stack Developer with ${differenceInYears(
 		Date.now(),
 		START_DATE
-	)}+ years of experience. I’m looking for a senior role remotely.`,
+	)}+ years of experience.<br />A strong background with both frontend and backend sides, and able to mentor junior developers.<br />Seeking a remote frontend/backend developer role where I can use my skills to make a positive impact.`,
 	contacts: [
 		{ name: 'linkedin', value: 'https://www.linkedin.com/in/zemil' },
 		{ name: 'email', value: 'elzyggg@gmail.com' },
@@ -20,11 +20,11 @@ export const DATA: ICV = {
 		ETech.typeorm,
 		ETech.postgres,
 		ETech.docker,
-		ETech.nx_monorepo,
 		ETech.reactjs,
 		ETech.redux,
+		ETech.web3,
 	],
-	career: [
+	experience: [
 		{
 			title: 'Backend Developer',
 			company: 'PWC (prev IBM Team)',
@@ -46,15 +46,16 @@ export const DATA: ICV = {
 			achievements: [
 				'developed a video game chat application from Zero to MVP',
 				'planned tech issues for the team',
+				'mentored 2 juniour frontend developers on team',
 				'led product planning with CEO',
 			],
 			stack: [
 				ETech.typescript,
-				ETech.nodejs,
 				ETech.expressjs,
 				ETech.socketio,
 				ETech.reactjs,
 				ETech.redux,
+				ETech.materialui,
 				ETech.webrtc,
 				ETech.mongoose,
 			],
@@ -75,7 +76,6 @@ export const DATA: ICV = {
 				ETech.nodejs,
 				ETech.nestjs,
 				ETech.typeorm,
-				ETech.postgres,
 				ETech.postgres,
 				ETech.python,
 				ETech.flask,

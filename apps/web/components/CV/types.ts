@@ -26,6 +26,7 @@ export enum ETech {
 	mobx = 'mobx',
 	mobx_state_tree = 'mobx state tree',
 	antd = 'antd',
+	materialui = 'material ui',
 	webrtc = 'webrtc',
 	html = 'html',
 	pug = 'pug',
@@ -71,5 +72,5 @@ export interface ICV {
 	contacts: IContact[];
 	stack: ETech[];
 	hobbies: string[];
-	career: IJob[];
+	experience: IJob[];
 }

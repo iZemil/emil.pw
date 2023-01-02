@@ -4,6 +4,12 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	.no-print {
+		@media only print {
+			display: none;
+		}
+	}
 `;
 
 export const CV = styled.div`
@@ -49,6 +55,7 @@ export const JobStack = styled.div`
 		padding: 5px 10px;
 		border-radius: 50px;
 		font-size: 13px;
+		cursor: default;
 	}
 `;
 
@@ -69,10 +76,6 @@ export const Download = styled.div`
 	right: 20px;
 	bottom: 20px;
 	z-index: 9;
-
-	@media print {
-		display: none;
-	}
 `;
 
 export const List = styled.div`
