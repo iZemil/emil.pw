@@ -10,6 +10,7 @@ const config = {
 	tagline: 'Full-Stack Developer',
 	url: 'https://emil.pw',
 	baseUrl: '/',
+	trailingSlash: true,
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/logo.svg',
