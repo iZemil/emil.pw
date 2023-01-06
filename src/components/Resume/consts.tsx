@@ -22,6 +22,8 @@ export enum ETech {
 	typeorm = 'typeorm',
 	mongodb = 'mongodb',
 	mongoose = 'mongoose',
+	redis = 'redis',
+	kafka = 'kafka',
 
 	reactjs = 'reactjs',
 	redux = 'redux',
@@ -85,8 +87,8 @@ export const DATA: ICV = {
 		START_DATE
 	)}+ years of experience.<br />A strong background with both frontend and backend sides, and able to mentor junior developers.<br />Seeking a remote frontend/backend developer role where I can use my skills to make a positive impact.`,
 	contacts: [
-		{ name: 'linkedin', value: 'https://www.linkedin.com/in/zemil' },
-		{ name: 'email', value: 'elzyggg@gmail.com' },
+		{ name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
+		{ name: 'Email', value: 'elzyggg@gmail.com' },
 	],
 	stack: [
 		ETech.typescript,
@@ -134,6 +136,7 @@ export const DATA: ICV = {
 				ETech.materialui,
 				ETech.webrtc,
 				ETech.mongoose,
+				ETech.redis,
 			],
 		},
 		{
@@ -196,5 +199,5 @@ export const DATA: ICV = {
 			stack: [ETech.reactjs, ETech.redux, ETech.wordpress, ETech.scss, ETech.pug, ETech.dom_api],
 		},
 	],
-	hobbies: ['🦄 developing my own projects', '🥋 brazilian jiu-jitsu', '🍳 cooking'],
+	hobbies: ['🦄 Developing my own projects', '🥋 Brazilian jiu-jitsu', '🍳 Cooking'],
 };
