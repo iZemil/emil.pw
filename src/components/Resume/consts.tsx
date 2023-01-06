@@ -150,9 +150,9 @@ export const DATA: ICV = {
 			from: new Date('2019 Oct'),
 			achievements: [
 				'Helped to solve issues for minimizing operational costs for the drilling company',
-				'Developed microservice gateway to work with Primavera system',
-				'Developed npm packages for company usage',
-				'Developed a gateway (frontend - python analytics)',
+				'Developed and maintained a microservice gateway to work with Primavera system',
+				'Maintained NPM packages for company development processes',
+				'Developed a REST API gateway between frontend and python analytics',
 			],
 			stack: [
 				ETech.typescript,
@@ -184,8 +184,9 @@ export const DATA: ICV = {
 			from: new Date('2018 Jul'),
 			achievements: [
 				'Improved the performance of a frontend side of web application',
-				'Developed own usage content CMS',
-				'Estimated tech tasks as part of a team',
+				'Developed and maintained a CMS for company usage',
+				'Estimated tech tasks as a part of a team',
+				'Refactored big codebase of legacy HTML to React development',
 			],
 			stack: [ETech.reactjs, ETech.mobx, ETech.mobx_state_tree, ETech.antd],
 		},
@@ -196,9 +197,9 @@ export const DATA: ICV = {
 			from: START_DATE,
 			achievements: [
 				'Developed huge amount of web page markups with cross platform support',
-				'Developed wordpress applications for my freelance clients',
-				'Developed several Jira Plugins',
-				'Supported current web solutions',
+				'Developed Wordpress applications for my freelance clients',
+				'Developed and maintained several Jira Plugins',
+				'Maintained and improved perfomance of current web solutions',
 			],
 			stack: [ETech.reactjs, ETech.redux, ETech.wordpress, ETech.scss, ETech.pug, ETech.dom_api],
 		},
