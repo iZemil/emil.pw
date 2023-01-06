@@ -4,6 +4,9 @@ export enum ETech {
 	docker = 'docker',
 	gitlabci = 'gitlab ci',
 	github_actions = 'github actions',
+	git = 'git',
+	aws = 'aws',
+	linux = 'linux',
 
 	python = 'python',
 	django = 'django',
@@ -109,6 +112,7 @@ export const DATA: ICV = {
 			from: new Date('2021 Sep'),
 			achievements: [
 				'Developed graphql API to use geological analytics operations',
+				'Developed and maintained a microservice architecture for 4 services',
 				'Collaborated with analytics and product managers to develop new app features',
 				'Reviewed the backend development team',
 				'Led javascript technical interviews',
@@ -123,7 +127,7 @@ export const DATA: ICV = {
 			from: new Date('2021 Jan'),
 			achievements: [
 				'Developed and maintained a web application from Zero to MVP',
-				'Planned tech issues for the team',
+				'Planned tech issues for the team and worked on the spints planning',
 				'Mentored 2 juniour frontend developers on team',
 				'Led product planning with CEO',
 			],
