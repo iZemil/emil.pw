@@ -1,16 +1,20 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
+import { useStateCallback } from '../../utils';
+
 import { DATA, ETech } from './consts';
 import { Section } from './Section';
 import { Job } from './Job';
 import styles from './styles.module.css';
 
 export function Resume() {
-	const [isAllStack, setAllStack] = React.useState(false);
+	const [isAllStack, viewAllStack] = useStateCallback(false);
 
 	const handleDownload = () => {
-		window.print();
+		viewAllStack(true, () => {
+			window.print();
+		});
 	};
 
 	return (
@@ -42,7 +46,7 @@ export function Resume() {
 					<span
 						className={clsx(['no-print', styles.showStackButton])}
 						onClick={() => {
-							setAllStack(!isAllStack);
+							viewAllStack(!isAllStack);
 						}}
 					>
 						{isAllStack ? 'see core' : 'see all'}

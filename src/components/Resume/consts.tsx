@@ -17,7 +17,7 @@ export enum ETech {
 	typescript = 'typescript',
 	nodejs = 'nodejs',
 	nestjs = 'nestjs',
-	expressjs = 'expressjs',
+	express = 'express',
 	socketio = 'socketio',
 	graphql = 'graphql',
 
@@ -82,13 +82,14 @@ export interface ICV {
 	experience: IJob[];
 }
 
-const START_DATE = new Date('2015 Jan');
+const START_DATE = new Date('2016 Jan');
 export const DATA: ICV = {
-	title: `Full-Stack Developer<br />Emil Zaripov`,
-	description: `Senior Full-Stack Developer with ${differenceInYears(
+	title: `NodeJS Developer<br />Emil Zaripov`,
+	description: `Senior NodeJS Developer with ${differenceInYears(
 		Date.now(),
 		START_DATE
-	)}+ years of experience.<br />A strong background with both frontend and backend sides, and able to mentor junior developers.<br />Seeking a remote frontend/backend developer role where I can use my skills to make a positive impact.`,
+	)}+ years of experience.<br />A strong background with both frontend and backend sides, and able to mentor junior developers.<br />
+	<strong>Seeking a Remote NodeJS Backend Role</strong>`,
 	contacts: [
 		{ name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
 		{ name: 'Email', value: 'elzyggg@gmail.com' },
@@ -107,9 +108,9 @@ export const DATA: ICV = {
 	experience: [
 		{
 			role: 'Backend Developer',
-			company: 'PWC (prev IBM Team) | Geological App',
+			company: 'IBM – Geological App',
 			to: new Date('2022 Apr'),
-			from: new Date('2021 Sep'),
+			from: new Date('2021 Mar'), // Sep
 			achievements: [
 				'Developed graphql API to use geological analytics operations',
 				'Developed and maintained a microservice architecture for 4 services',
@@ -117,35 +118,42 @@ export const DATA: ICV = {
 				'Reviewed the backend development team',
 				'Led javascript technical interviews',
 			],
-			stack: [ETech.typescript, ETech.nodejs, ETech.nestjs, ETech.graphql, ETech.mongoose],
+			stack: [
+				ETech.typescript,
+				ETech.nodejs,
+				ETech.nestjs,
+				ETech.graphql,
+				ETech.mongoose,
+				ETech.python,
+				ETech.jest,
+			],
 		},
 
 		{
 			role: 'Tech Lead Developer',
-			company: 'Sparkme.club | Video Chat',
-			to: new Date('2021 Sep'),
+			company: 'Sparkme.club – Video Chat',
+			to: new Date('2021 Apr 30'), // Sep
 			from: new Date('2021 Jan'),
 			achievements: [
 				'Developed and maintained a web application from Zero to MVP',
 				'Planned tech issues for the team and worked on the spints planning',
 				'Mentored 2 juniour frontend developers on team',
-				'Led product planning with CEO',
 			],
 			stack: [
 				ETech.typescript,
-				ETech.expressjs,
+				ETech.express,
 				ETech.socketio,
 				ETech.reactjs,
 				ETech.redux,
-				ETech.materialui,
 				ETech.webrtc,
 				ETech.mongoose,
 				ETech.redis,
+				ETech.jest,
 			],
 		},
 		{
 			role: 'Backend Developer',
-			company: 'IBM | Drilling Activities App',
+			company: 'IBM – Drilling Activities App',
 			to: new Date('2021 Jan'),
 			from: new Date('2019 Oct'),
 			achievements: [
@@ -167,7 +175,7 @@ export const DATA: ICV = {
 		},
 		{
 			role: 'Team Lead Developer',
-			company: 'Allbebet | Crypto Gambling Platform',
+			company: 'Allbebet – Crypto Gambling Platform',
 			to: new Date('2019 Aug'),
 			from: new Date('2019 Mar'),
 			achievements: [
@@ -175,11 +183,11 @@ export const DATA: ICV = {
 				'Planned backend and blockchain issues for the team',
 				'Integrated blockchain for web application',
 			],
-			stack: [ETech.nodejs, ETech.expressjs, ETech.mongoose, ETech.reactjs, ETech.mobx, ETech.antd],
+			stack: [ETech.nodejs, ETech.express, ETech.mongoose, ETech.reactjs, ETech.mobx, ETech.antd],
 		},
 		{
 			role: 'Frontend Developer',
-			company: 'RobotVera | AI Recruitment',
+			company: 'RobotVera – AI Recruitment',
 			to: new Date('2019 Aug'),
 			from: new Date('2018 Jul'),
 			achievements: [
@@ -204,5 +212,5 @@ export const DATA: ICV = {
 			stack: [ETech.reactjs, ETech.redux, ETech.wordpress, ETech.scss, ETech.pug, ETech.dom_api],
 		},
 	],
-	hobbies: ['🦄 Developing my own projects', '🥋 Brazilian jiu-jitsu', '🍳 Cooking'],
+	hobbies: ['🦄 Developing side projects', '🥋 Brazilian jiu-jitsu', '🍳 Cooking'],
 };

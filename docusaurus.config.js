@@ -33,9 +33,10 @@ const config = {
 			'classic',
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
-				docs: {
-					sidebarPath: require.resolve('./sidebars.js'),
-				},
+				// docs: {
+				// 	sidebarPath: require.resolve('./sidebars.js'),
+				// },
+				docs: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
@@ -53,7 +54,7 @@ const config = {
 					src: 'img/logo.svg',
 				},
 				items: [
-					//   {to: '/blog', label: 'Blog', position: 'left'},
+					// { to: '/products', label: 'Products', position: 'left' },
 					{
 						href: 'https://github.com/izemil',
 						label: 'GitHub',
