@@ -9,7 +9,7 @@ export const Section = (props: { title?: string; children: React.ReactNode }) =>
 		<div className={styles.section}>
 			{title && <h2>{title}</h2>}
 
-			<div className={styles.section__list}>{children}</div>
+			<div className={styles.sectionList}>{children}</div>
 		</div>
 	);
 };

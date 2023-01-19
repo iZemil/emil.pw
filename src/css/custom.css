@@ -34,3 +34,15 @@
 		display: none;
 	}
 }
+
+.navbar__title {
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.navbar__title::after {
+	content: '.';
+	color: var(--ifm-color-primary);
+	font-size: 44px;
+	line-height: 0;
+}

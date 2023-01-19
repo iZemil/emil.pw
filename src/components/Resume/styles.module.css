@@ -2,33 +2,34 @@
 	max-width: 768px;
 	padding: 0 10px;
 	margin: 20px auto 40px;
+	overflow-x: hidden;
 }
 
-.resume__header {
+.resumeHeader {
 	display: flex;
 	align-items: start;
 	flex-wrap: wrap;
 	gap: 20px;
 }
 
-.resume__meta {
+.resumeMeta {
 	flex: 1;
 	min-width: 420px;
 }
 
-.resume__title {
+.resumeTitle {
 	margin: 0;
 	flex-direction: column;
 	gap: 0;
 	line-height: 1.4;
 }
 
-.resume__img {
+.resumeImg {
 	max-width: 220px;
 	height: auto;
 }
 
-.resume__description {
+.resumeDescription {
 	font-size: 17px;
 }
 
@@ -45,7 +46,7 @@
 	margin-bottom: 20px;
 }
 
-.section__list {
+.sectionList {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -63,28 +64,45 @@
 	margin-bottom: 10px;
 }
 
-.job__role {
+.jobRole {
 	margin: 5px 0;
 }
 
-.job__co {
+.jobHead {
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	opacity: 0.8;
+	flex-wrap: wrap;
+	gap: 0;
+	color: var(--ifm-color-secondary-contrast-foreground);
 }
 
-.job__techList {
-	padding: 10px 0;
+.jobCompany {
+	margin-right: 14px;
+	font-weight: 500;
+}
+
+.jobDates {
+	position: relative;
+	padding-left: 24px;
+}
+
+.jobDates::before {
+	content: '•';
+	position: absolute;
+	left: 0;
+}
+
+.jobTechList {
 	display: flex;
 	gap: 5px;
 	flex-wrap: wrap;
+	margin: 5px 0 10px;
 }
 
-.job__techItem {
-	border: 1px solid var(--ifm-color-secondary);
-	padding: 5px 10px;
-	border-radius: 50px;
-	font-size: 13px;
+.jobTechItem {
+	font-size: 14px;
 	cursor: default;
+	padding: 0;
+	border: 0;
+	text-decoration: underline;
 }

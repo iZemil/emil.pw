@@ -48,11 +48,11 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'emil.pw',
-				logo: {
-					alt: 'Emil Logo',
-					src: 'img/logo.svg',
-				},
+				title: 'Emil',
+				// logo: {
+				// 	alt: 'Emil Logo',
+				// 	src: 'img/logo.svg',
+				// },
 				items: [
 					// { to: '/products', label: 'Products', position: 'left' },
 					{

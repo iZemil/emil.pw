@@ -10,27 +10,26 @@ export const Job = (props: IJob) => {
 
 	return (
 		<div className={styles.job}>
-			<h3 className={styles.job__role}>{role}</h3>
+			<h3 className={styles.jobRole}>{role}</h3>
 
-			<div className={styles.job__co}>
-				<div className={styles.job__XXX}>{company}</div>
-				{' • '}
-				<div>
+			<div className={styles.jobHead}>
+				<div className={styles.jobCompany}>{company}</div>
+				<div className={styles.jobDates}>
 					{date(from)} - {date(to)} ({formatDistance(from, to)})
 				</div>
+			</div>
+
+			<div className={styles.jobTechList}>
+				{stack.map((it, index) => (
+					<span className={styles.jobTechItem} key={`${it}-${index}`}>
+						{it}
+					</span>
+				))}
 			</div>
 
 			<div className={styles.list}>
 				{achievements.map((a, key) => (
 					<li key={key}>{a}</li>
-				))}
-			</div>
-
-			<div className={styles.job__techList}>
-				{stack.map((it, index) => (
-					<span className={styles.job__techItem} key={`${it}-${index}`}>
-						{it}
-					</span>
 				))}
 			</div>
 		</div>

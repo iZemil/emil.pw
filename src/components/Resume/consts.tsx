@@ -136,8 +136,9 @@ export const DATA: ICV = {
 			from: new Date('2021 Jan'),
 			achievements: [
 				'Developed and maintained a web application from Zero to MVP',
-				'Planned tech issues for the team and worked on the spints planning',
+				'Planned tech issues for the team and worked on the sprints planning',
 				'Mentored 2 juniour frontend developers on team',
+				'Reviewed all team code',
 			],
 			stack: [
 				ETech.typescript,

@@ -1,20 +1,24 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import { useStateCallback } from '../../utils';
-
 import { DATA, ETech } from './consts';
 import { Section } from './Section';
 import { Job } from './Job';
 import styles from './styles.module.css';
 
 export function Resume() {
-	const [isAllStack, viewAllStack] = useStateCallback(false);
+	const [downloadCounter, setDownloadCounter] = React.useState(0);
+	const [isAllStack, viewAllStack] = React.useState(false);
+
+	React.useEffect(() => {
+		if (isAllStack && downloadCounter > 0) {
+			window.print();
+		}
+	}, [isAllStack, downloadCounter]);
 
 	const handleDownload = () => {
-		viewAllStack(true, () => {
-			window.print();
-		});
+		viewAllStack(true);
+		setDownloadCounter(downloadCounter + 1);
 	};
 
 	return (
@@ -23,16 +27,13 @@ export function Resume() {
 				Download
 			</button>
 
-			<div className={clsx([styles.resume__header, styles.section])}>
-				<img src="/img/emil.jpg" alt="Emil" className={styles.resume__img} />
+			<div className={clsx([styles.resumeHeader, styles.section])}>
+				<img src="/img/emil.jpg" alt="Emil" className={styles.resumeImg} />
 
-				<div className={styles.resume__meta}>
-					<h1 className={styles.resume__title} dangerouslySetInnerHTML={{ __html: DATA.title }} />
+				<div className={styles.resumeMeta}>
+					<h1 className={styles.resumeTitle} dangerouslySetInnerHTML={{ __html: DATA.title }} />
 
-					<div
-						className={styles.resume__description}
-						dangerouslySetInnerHTML={{ __html: DATA.description }}
-					/>
+					<div className={styles.resumeDescription} dangerouslySetInnerHTML={{ __html: DATA.description }} />
 				</div>
 			</div>
 
