@@ -92,7 +92,7 @@ export const DATA: ICV = {
 	<strong>Seeking a Remote NodeJS Backend Role</strong>`,
 	contacts: [
 		{ name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
-		{ name: 'Email', value: 'elzyggg@gmail.com' },
+		{ name: 'Email', value: 'hi@emil.pw' },
 	],
 	stack: [
 		ETech.typescript,
@@ -109,7 +109,7 @@ export const DATA: ICV = {
 		{
 			role: 'Backend Developer',
 			company: 'IBM – Geological App',
-			to: new Date('2022 Apr'),
+			to: new Date('2022 Nov 30'), // 22 apr
 			from: new Date('2021 Mar'), // Sep
 			achievements: [
 				'Developed graphql API to use geological analytics operations',
