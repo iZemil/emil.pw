@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'emil.pw',
+	title: 'EMIL PRO WEB',
 	tagline: 'Full-Stack Developer',
 	url: 'https://emil.pw',
 	baseUrl: '/',
