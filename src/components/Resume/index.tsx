@@ -5,6 +5,7 @@ import { DATA, ETech } from './consts';
 import { Section } from './Section';
 import { Job } from './Job';
 import styles from './styles.module.css';
+import { Status } from './Status';
 
 export function Resume() {
 	const [downloadCounter, setDownloadCounter] = React.useState(0);
@@ -23,6 +24,8 @@ export function Resume() {
 
 	return (
 		<div className={styles.resume}>
+			<Status isOpenToWork={true} />
+
 			<button className={clsx([styles.download, 'button button--primary', 'no-print'])} onClick={handleDownload}>
 				Download
 			</button>
