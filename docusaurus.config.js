@@ -48,6 +48,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
+				hideOnScroll: true,
 				title: 'Emil',
 				// logo: {
 				// 	alt: 'Emil Logo',

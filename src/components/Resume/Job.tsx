@@ -10,14 +10,14 @@ export const Job = (props: IJob) => {
 
 	return (
 		<div className={styles.job}>
-			<h3 className={styles.jobRole}>{role}</h3>
+			<h3 className={styles.jobHead}>{company}</h3>
 
-			<div className={styles.jobHead}>
-				<div className={styles.jobCompany}>{company}</div>
+			<h4 className={styles.jobRole}>
+				{role}
 				<div className={styles.jobDates}>
 					{date(from)} - {date(to)} ({formatDistance(from, to)})
 				</div>
-			</div>
+			</h4>
 
 			<div className={styles.jobTechList}>
 				{stack.map((it, index) => (

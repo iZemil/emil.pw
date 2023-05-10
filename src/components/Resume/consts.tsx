@@ -107,16 +107,41 @@ export const DATA: ICV = {
 	],
 	experience: [
 		{
+			role: 'Teamlead',
+			company: 'BLLNG.com – Crypto Payments',
+			to: new Date('2023 May'),
+			from: new Date('2022 Apr'),
+			achievements: [
+				'Developed MVP version of web service, resulting in a successful launch of the platform',
+				'Planned technical sprints for both backend and frontend teams, resulting in increased productivity',
+				'Developed backend REST API with financial logic, resulting in seamless cryptocurrency payment processing',
+				'Conducted unit tests to ensure code quality and identify any potential issues before release',
+				"Reviewed the development team's code, providing constructive feedback and ensuring adherence to coding standards",
+				'Led technical interviews for potential Javascript developers, resulting in the hiring of qualified team members',
+			],
+			stack: [
+				ETech.typescript,
+				ETech.nodejs,
+				ETech.nestjs,
+				ETech.postgres,
+				ETech.jest,
+				ETech.web3,
+				ETech.docker,
+				ETech.unit_tests,
+			],
+		},
+
+		{
 			role: 'Backend Developer',
 			company: 'IBM – Geological App',
-			to: new Date('2022 Nov 30'), // 22 apr
-			from: new Date('2021 Mar'), // Sep
+			to: new Date('2022 Apr'),
+			from: new Date('2021 Sep'),
 			achievements: [
 				'Developed graphql API to use geological analytics operations',
 				'Developed and maintained a microservice architecture for 4 services',
 				'Collaborated with analytics and product managers to develop new app features',
 				'Reviewed the backend development team',
-				'Led javascript technical interviews',
+				'Led Javascript technical interviews',
 			],
 			stack: [
 				ETech.typescript,
@@ -132,7 +157,7 @@ export const DATA: ICV = {
 		{
 			role: 'Tech Lead Developer',
 			company: 'Sparkme.club – Video Chat',
-			to: new Date('2021 Apr 30'), // Sep
+			to: new Date('2021 Sep 30'),
 			from: new Date('2021 Jan'),
 			achievements: [
 				'Developed and maintained a web application from Zero to MVP',
@@ -154,7 +179,7 @@ export const DATA: ICV = {
 		},
 		{
 			role: 'Backend Developer',
-			company: 'IBM – Drilling Activities App',
+			company: 'IBM – Drilling Operations App',
 			to: new Date('2021 Jan'),
 			from: new Date('2019 Oct'),
 			achievements: [
@@ -201,7 +226,7 @@ export const DATA: ICV = {
 		},
 		{
 			role: 'Frontend Developer',
-			company: 'Freelance/Dextra/Unit6',
+			company: 'Freelance - Dextra - Unit6',
 			to: new Date('2018 Jun'),
 			from: START_DATE,
 			achievements: [
@@ -213,5 +238,9 @@ export const DATA: ICV = {
 			stack: [ETech.reactjs, ETech.redux, ETech.wordpress, ETech.scss, ETech.pug, ETech.dom_api],
 		},
 	],
-	hobbies: ['🦄 Developing side projects', '🥋 Brazilian jiu-jitsu', '🍳 Cooking'],
+	hobbies: [
+		'🦄 I love exploring new technologies and ideas by working on side projects',
+		'🥋 I have a passion for Brazilian jiu-jitsu',
+		'🍳 I enjoy cooking and experimenting with different recipes',
+	],
 };
