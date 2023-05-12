@@ -38,7 +38,7 @@ export function Resume() {
 			</button>
 
 			<div className={clsx([styles.resumeHeader, styles.section])}>
-				<img src="/img/emil.jpg" alt="Emil" className={styles.resumeImg} />
+				<img src="/img/emil.png" alt="Emil" className={styles.resumeImg} />
 
 				<div className={styles.resumeMeta}>
 					<h1

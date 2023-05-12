@@ -7,9 +7,9 @@
 
 .resumeHeader {
 	display: flex;
-	align-items: start;
+	align-items: flex-end;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 10px 20px;
 }
 
 .resumeMeta {
@@ -25,7 +25,9 @@
 }
 
 .resumeImg {
-	max-width: 220px;
+	border-radius: var(--ifm-button-border-radius);
+	background: var(--ifm-color-primary);
+	max-width: 256px;
 	height: auto;
 }
 
