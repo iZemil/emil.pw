@@ -37,6 +37,7 @@ body *::selection {
 @media only print {
 	.no-print {
 		display: none;
+		visibility: hidden;
 	}
 }
 

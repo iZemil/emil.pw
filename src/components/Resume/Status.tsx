@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import * as React from 'react';
 
 import styles from './styles.module.css';
@@ -13,5 +14,5 @@ export const Status = (props: IProps) => {
 		return null;
 	}
 
-	return <div className={styles.resumeStatus}>Open to work</div>;
+	return <div className={clsx([styles.resumeStatus, 'no-print'])}>Open to work</div>;
 };

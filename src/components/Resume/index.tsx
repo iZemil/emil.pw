@@ -1,7 +1,7 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import { DATA, ETech } from './consts';
+import { RESUME, ETech } from './consts';
 import { Section } from './Section';
 import { Job } from './Job';
 import styles from './styles.module.css';
@@ -9,16 +9,16 @@ import { Status } from './Status';
 
 export function Resume() {
 	const [downloadCounter, setDownloadCounter] = React.useState(0);
-	const [isAllStack, viewAllStack] = React.useState(false);
+	const [isAllSkills, viewAllStack] = React.useState(false);
 
 	React.useEffect(() => {
-		if (isAllStack && downloadCounter > 0) {
+		if (!isAllSkills && downloadCounter > 0) {
 			window.print();
 		}
-	}, [isAllStack, downloadCounter]);
+	}, [isAllSkills, downloadCounter]);
 
 	const handleDownload = () => {
-		viewAllStack(true);
+		viewAllStack(false);
 		setDownloadCounter(downloadCounter + 1);
 	};
 
@@ -26,52 +26,74 @@ export function Resume() {
 		<div className={styles.resume}>
 			<Status isOpenToWork={true} />
 
-			<button className={clsx([styles.download, 'button button--primary', 'no-print'])} onClick={handleDownload}>
-				Download
+			<button className={clsx([styles.download, 'button', 'no-print'])} onClick={handleDownload}>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+					<path
+						d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3"
+						strokeWidth="1.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					/>
+				</svg>
 			</button>
 
 			<div className={clsx([styles.resumeHeader, styles.section])}>
 				<img src="/img/emil.jpg" alt="Emil" className={styles.resumeImg} />
 
 				<div className={styles.resumeMeta}>
-					<h1 className={styles.resumeTitle} dangerouslySetInnerHTML={{ __html: DATA.title }} />
+					<h1
+						className={styles.resumeTitle}
+						dangerouslySetInnerHTML={{ __html: `${RESUME.title}<br />${RESUME.name}` }}
+					/>
 
-					<div className={styles.resumeDescription} dangerouslySetInnerHTML={{ __html: DATA.description }} />
+					<div
+						className={styles.resumeDescription}
+						dangerouslySetInnerHTML={{ __html: RESUME.description }}
+					/>
 				</div>
 			</div>
 
-			<Section title="Technical Stack">
-				<div>
-					<b>
-						{isAllStack ? 'Worked with' : 'Core'}
-						{': '}
-					</b>
-					{isAllStack ? [...Object.values(ETech)].join(', ') : DATA.stack.join(', ')}
+			<Section title="Skills">
+				<div className={styles.skills}>
+					<b>{`${isAllSkills ? 'Common stack' : 'Core stack with years'}`}</b>
+
+					{isAllSkills
+						? [...Object.values(ETech)].map((it) => (
+								<div key={it} className={styles.skill}>
+									{it}
+								</div>
+						  ))
+						: RESUME.coreStack.map((it) => (
+								<div key={it.name} className={styles.skill}>
+									{it.name} {it.years}+
+								</div>
+						  ))}
+
 					<span
 						className={clsx(['no-print', styles.showStackButton])}
 						onClick={() => {
-							viewAllStack(!isAllStack);
+							viewAllStack(!isAllSkills);
 						}}
 					>
-						{isAllStack ? 'see core' : 'see all'}
+						{isAllSkills ? 'see core' : 'see all'}
 					</span>
 				</div>
 			</Section>
 
 			<Section title="Experience">
-				{DATA.experience.map((it, key) => (
+				{RESUME.experience.map((it, key) => (
 					<Job key={key} {...it} />
 				))}
 			</Section>
 
 			<Section title="Hobbies">
-				{DATA.hobbies.map((it) => (
+				{RESUME.hobbies.map((it) => (
 					<li key={it}>{it}</li>
 				))}
 			</Section>
 
 			<Section title="Contacts">
-				{DATA.contacts.map((it) => (
+				{RESUME.contacts.map((it) => (
 					<li key={it.name}>
 						{it.name}:{'  '}
 						<b>{it.value}</b>
